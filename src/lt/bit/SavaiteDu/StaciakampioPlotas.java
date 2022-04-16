@@ -16,8 +16,6 @@ public class StaciakampioPlotas {
         System.out.println("Iveskite staciakampio krastine y:");
         double krastineY = myScaner.nextDouble();
 
-
-
 if (krastineX <= 0 || krastineY <= 0){
     System.out.println("Krastines negali buti nuline aba neigiama");
 } else {
@@ -34,7 +32,7 @@ if (krastineX <= 0 || krastineY <= 0){
         // return perimetras;
 
         // 2 variantas kaip galima
-        return ((x * 2) + (y * 2));
+        return x * 2 + y * 2;
     }
 
     public static double plotoSkaiciavimas(double x, double y) {

@@ -17,6 +17,7 @@ public class SkaiciusLyginisArNelyginis {
     }
 
     public static boolean arLyginis(int x) {
+        //ar skaicius lyginis tai yra liekana == 0
         if ((x % 2) == 0) {
             return true;
         } else {

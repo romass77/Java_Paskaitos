@@ -6,7 +6,7 @@ public class FunkcijaGrazinaMaziausiaIrDidziausiaMasyvoSkaiciu {
     public static void main(String[] args) {
 
         Scanner myScaner = new Scanner(System.in);
-        int[] masyvas = new int[]{10, 45, 5, 3, 56, 19, 7,245,1};
+        int[] masyvas = new int[]{10, 45, 5, 3, 56, 19, 7,245,1,30};
 
         int min = gautiMinReiksme(masyvas);
         System.out.println("Minimali masyvo reiksme yra: " + min);
@@ -16,7 +16,13 @@ public class FunkcijaGrazinaMaziausiaIrDidziausiaMasyvoSkaiciu {
     }
 
     public static int gautiMinReiksme(int[] x) {
-        int minReiksme = x[0];
+
+        // 1 budas
+        int minReiksme = Integer.MAX_VALUE;
+
+        // 2 budas
+        //int minReiksme = x[0];
+
         for (int i = 0; i < x.length; i++) {
             if (x[i] < minReiksme) {
                 minReiksme = x[i];
